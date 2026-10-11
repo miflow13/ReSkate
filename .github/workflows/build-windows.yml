@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: cmake --preset vs2022-x64
-      - run: cmake --build --preset release --parallel 4 --target ReSkate ReSkateLauncher
+      - run: cmake --build --preset release --parallel 4
       - uses: actions/upload-artifact@v4
         with:
           name: reskate-client
